@@ -97,6 +97,68 @@ main {
   color: #ff900e;
 }
 
+/* features related styles  */
+.features {
+  margin-top: 100px;
+  display: flex;
+  gap: 100px;
+}
+.features-title {
+  color: #131313;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-left: 5px solid #ff900e;
+  padding-left: 10px;
+}
+.features-des {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.card {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+.card-title {
+  color: #131313;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.card.des {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.feature-img img {
+  width: 550px;
+ 
+
+}
+.year {
+  text-align: center;
+  background-color: #ff900e;
+  color: #fff;
+  border-radius: 8px;
+  padding: 40px 45px;
+  
+  width: 200px;
+  position: relative;
+  bottom: 60px;
+  right: 50px;
+ 
+}
+.year h3 {
+font-size: 3rem;
+font-weight: 700;
+text-align: center;
+
+}
 /* achivement section related styles  */
 .achiments {
   margin-top: 130px;
@@ -133,8 +195,8 @@ main {
 }
 
 /* sponsor related styles  */
-.sponors{
-    text-align: center;
+.sponors {
+  text-align: center;
 }
 .sponsor-title {
   color: #131313;
@@ -151,17 +213,27 @@ main {
   text-align: center;
   margin-top: 10px;
 }
-.sponsor-img-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 40px;
-    
+.sponsor-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
 }
-.sponsor-img-container img{
-    width: 120px;
-    filter: grayscale(100%);
-
+.sponsor-img-container img {
+  width: 120px;
+  filter: grayscale(100%);
+}
+footer {
+  max-width: 50%;
+  padding: 30px 200px;
+  border-radius: 8px;
+  background: #fff4e7;
+  margin: 0 auto;
+  text-align: center;
+  color: #424242;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 100px;
 }
 
 /* responsive media quaries  */
@@ -175,11 +247,9 @@ main {
   nav,
   .team-container,
   .achiments-boxes,
-  .sponsor-img-container {
+  .sponsor-img-container,
+  .features {
     flex-direction: column;
-    
-
-
   }
   main {
     text-align: center;
@@ -191,12 +261,24 @@ main {
     margin-bottom: 20px;
   }
   .team-info,
-  .achiments-boxes {
+  .achiments-boxes  {
     padding-left: 10px;
     padding-right: 10px;
   }
   .team-img-container img {
     height: 90%;
+  }
+  .card{
+    padding: 10px 50px;
+    
+  }
+  .feature-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .year{
+    margin-left: 63px;
+    padding: 20px 20px;
   }
 }
 /* tablet or medium devices  */
@@ -208,11 +290,23 @@ main {
   nav,
   .team-container,
   .achiments-boxes,
-  .sponsor-img-container {
+  .sponsor-img-container,
+  .features {
     flex-direction: column;
     gap: 10px;
   }
   main {
     text-align: center;
   }
+  .features{
+    margin: auto;
+  }
+  .year{
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
+  .feature-img img {
+    
+    margin-right: 50px;
+}
 }
